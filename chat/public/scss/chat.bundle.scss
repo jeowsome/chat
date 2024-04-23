@@ -300,18 +300,27 @@ $height: 582px;
     align-items: center;
     .open-attach-items {
       cursor: pointer;
+      display: none;
     }
     .type-message {
-      margin: 0 10px;
+      margin: 0 10px 0px -5px;
       border-radius: 100px;
       font-size: $font-size-sm;
+    }
+    
+    .type-message:hover {
+    box-shadow: 0px 0px 1px 2px;
+    }
+
+    .type-message:focus {
+    box-shadow: 0px 0px 1px 2px;
     }
     .message-send-button {
       cursor: pointer;
       height: 2rem;
       width: 2rem;
       border-radius: 50%;
-      background: var(--blue-500);
+      background: var(--primary);
       display: flex;
       align-items: center;
       justify-content: center;
