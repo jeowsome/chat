@@ -4,6 +4,7 @@
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
+ "allow_import": 1,
  "field_order": [
   "sender",
   "sender_email",
@@ -60,7 +61,8 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
-   "write": 1
+   "write": 1,
+   "import": 1
   }
  ],
  "sort_field": "modified",
