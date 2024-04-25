@@ -1,14 +1,10 @@
 import moment from 'moment';
 
 function get_time(time) {
-  let current_time;
   if (time) {
-    current_time = moment(time);
     return frappe.datetime.prettyDate(time)
-  } else {
-    current_time = moment();
-  }
-  return current_time.format('h:mm A');
+  } 
+  return frappe.datetime.get_time()
 }
 
 function get_date_from_now(dateObj, type) {
