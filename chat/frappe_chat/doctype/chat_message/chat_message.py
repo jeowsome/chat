@@ -6,5 +6,5 @@ from frappe.model.document import Document
 
 class ChatMessage(Document):
 	def change_column_type(self):
-		frappe.db.change_column("Chat Message", "content", "Long Text")
+		frappe.db.change_column_type("Chat Message", "content", "Long Text")
 		frappe.db.commit()
