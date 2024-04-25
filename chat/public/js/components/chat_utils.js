@@ -1,7 +1,7 @@
 import moment from 'moment';
 
 function get_time(time) {
-  return frappe.prettyDate(frappe.datetime.convert_to_system_tz(time ? time : frappe.datetime.now_datetime()))
+  return frappe.datetime.prettyDate(frappe.datetime.convert_to_system_tz(time ? time : frappe.datetime.system_datetime()))
 }
 
 function get_date_from_now(dateObj, type) {
