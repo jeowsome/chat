@@ -10,12 +10,6 @@ def execute():
     migrate_rooms()
     migrate_messages()
 
-
-def change_column_type():
-    frappe.db.change_column("Chat Message", "content", "Long Text")
-    frappe.db.commit()
-
-
 def migrate_rooms():
     old_rooms_list = frappe.qb.from_(
         'Chat Room').select('*').run(as_dict=True)
