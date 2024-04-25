@@ -4,6 +4,7 @@ function get_time(time) {
   let current_time;
   if (time) {
     current_time = moment(time);
+    return frappe.datetime.prettyDate(time)
   } else {
     current_time = moment();
   }
