@@ -36,13 +36,12 @@ export default class ChatSpace {
     );
     const header_html = `
 			<div class='chat-header'>
-				${
-          this.profile.is_admin === true
-            ? `<span class='chat-back-button' title='${__('Go Back')}' >
+				${this.profile.is_admin === true
+        ? `<span class='chat-back-button' title='${__('Go Back')}' >
 								${frappe.utils.icon('left')}
 							</span>`
-            : ``
-        }
+        : ``
+      }
 				${this.avatar_html}
 				<div class='chat-profile-info'>
 					<div class='chat-profile-name'>
