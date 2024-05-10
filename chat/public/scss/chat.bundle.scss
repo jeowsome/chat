@@ -247,7 +247,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .chat-space {
   height: 100%;
   .chat-space-container {
-    padding: $padding-chat-lr;
+    padding: $padding-chat-lr 0px $padding-chat-lr 0px;
     overflow-wrap: break-word;
     height: calc_height($height, 15px);
     overflow-y: scroll;
