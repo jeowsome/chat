@@ -270,7 +270,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: $font-size-sm;
         border-radius: 13px 13px 13px 0px;
         max-width: 78%;
-        margin-left: 5px;
+        border: solid gray 1px;
+        margin-left: 6px;
       }
     }
     .recipient-message {
@@ -281,12 +282,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
       .message-bubble {
         background: var(--control-bg);
         color: var(--text-color)  ;
-        padding: 6px;
+        padding: 8px;
         font-size: $font-size-sm;
         border-radius: 13px 13px 0px 13px;
         max-width: 78%;
-        border: solid gray 1px;
-        margin-left: 5px;
       }
     }
     .message-time {
