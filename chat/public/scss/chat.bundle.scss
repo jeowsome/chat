@@ -270,6 +270,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: $font-size-sm;
         border-radius: 13px 13px 13px 0px;
         max-width: 78%;
+        margin-left: 5px;
       }
     }
     .recipient-message {
