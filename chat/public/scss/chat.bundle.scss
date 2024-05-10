@@ -279,16 +279,19 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
       align-items: flex-end;
       .message-bubble {
         background: var(--control-bg);
-        color: var(--text-color);
-        padding: 8px;
+        color: var(--text-color)  ;
+        padding: 6px;
         font-size: $font-size-sm;
         border-radius: 13px 13px 0px 13px;
         max-width: 78%;
+        border: solid gray 1px;
+        margin-left: 5px;
       }
     }
     .message-time {
       font-size: $font-size-xs;
       color: var(--text-muted);
+      padding-left: 7px;
     }
     .date-line {
       width: 100%;
@@ -455,7 +458,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     color: var(--bg-color);
     position: relative;
     top: -10px;
-    left: -10px;
+    left: -10px;  
     border-radius: 50%;
     font-size: 9px;
     border: 1px solid var(--red-avatar-color);
